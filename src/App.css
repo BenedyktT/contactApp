@@ -1,11 +1,29 @@
 @import "~bootstrap/dist/css/bootstrap.css";
-
+.add-contact-wrapper{
+ width: 100%;
+ 
+}
 .add-contact-form {
   display: flex;
   flex-direction: column;
   width: 50%;
+  margin:auto
+}
+
+.add-contact-form>input{
+padding:1rem
 }
 
 .form-submit-button {
   margin: 1rem 0;
+
 }
+.error__message{
+font-size: 0.8rem;
+color:red
+}
+.error{
+  border:1px solid red
+
+}
+
