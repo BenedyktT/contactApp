@@ -10,6 +10,14 @@ export default class AddContact extends Component {
 		phone: "",
 		errors: {}
 	};
+	async componentDidMount() {
+		const { id } = this.props.match.params;
+		const res = await axios.get("https://jsonplaceholder.typicode.com/users/");
+		const setEditContact = res.data.filter(
+			contact => contact.id === parseInt(id)
+		);
+		this.setState(...setEditContact);
+	}
 	onChange = e => {
 		this.setState({ [e.target.name]: e.target.value });
 	};
@@ -28,12 +36,18 @@ export default class AddContact extends Component {
 			this.setState({ errors: { phone: "This field is required" } });
 			return;
 		}
-		const newContact = { name, email, phone };
-		const res = await axios.post(
-			`https://jsonplaceholder.typicode.com/users/`,
-			newContact
+		const updContact = {
+			name,
+			email,
+			phone
+		};
+		const { id } = this.props.match.params;
+		const res = await axios.put(
+			`https://jsonplaceholder.typicode.com/users/${id}`,
+			updContact
 		);
-		value.dispatch({ type: "ADD_CONTACT", payload: res.data });
+
+		value.dispatch({ type: "UPDATE_CONTACT", payload: res.data });
 		this.setState(() => ({ name: "", email: "", phone: "", errors: {} }));
 
 		this.props.history.push("/");
@@ -46,7 +60,7 @@ export default class AddContact extends Component {
 				{value => {
 					return (
 						<div className="add-contact-wrapper">
-							<h5 className="add-contact__">Create contact</h5>
+							<h5 className="add-contact__">Edit contact</h5>
 							<form
 								className="add-contact-form"
 								onSubmit={this.onSubmitHandler.bind(this, value)}

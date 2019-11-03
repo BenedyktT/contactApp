@@ -1,4 +1,25 @@
 @import "~bootstrap/dist/css/bootstrap.css";
+.contact-wrapper{
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  margin:1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 400px) {
+  .contact-actions{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;;
+  }
+}
+
+.contact-actions> *{
+  margin:0 1rem;
+  
+}
 .add-contact-wrapper{
  width: 100%;
  
