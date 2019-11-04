@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "benedyktT.github.io/contactApp/static/css/main.1cff9e9b.chunk.css",
+    "main.js": "benedyktT.github.io/contactApp/static/js/main.bbb9d3f6.chunk.js",
+    "main.js.map": "benedyktT.github.io/contactApp/static/js/main.bbb9d3f6.chunk.js.map",
+    "runtime-main.js": "benedyktT.github.io/contactApp/static/js/runtime-main.7e34fda2.js",
+    "runtime-main.js.map": "benedyktT.github.io/contactApp/static/js/runtime-main.7e34fda2.js.map",
+    "static/css/2.510409cd.chunk.css": "benedyktT.github.io/contactApp/static/css/2.510409cd.chunk.css",
+    "static/js/2.18fb742f.chunk.js": "benedyktT.github.io/contactApp/static/js/2.18fb742f.chunk.js",
+    "static/js/2.18fb742f.chunk.js.map": "benedyktT.github.io/contactApp/static/js/2.18fb742f.chunk.js.map",
+    "index.html": "benedyktT.github.io/contactApp/index.html",
+    "precache-manifest.0d9df353a1635e6d904faf3ff23361fa.js": "benedyktT.github.io/contactApp/precache-manifest.0d9df353a1635e6d904faf3ff23361fa.js",
+    "service-worker.js": "benedyktT.github.io/contactApp/service-worker.js",
+    "static/css/2.510409cd.chunk.css.map": "benedyktT.github.io/contactApp/static/css/2.510409cd.chunk.css.map",
+    "static/css/main.1cff9e9b.chunk.css.map": "benedyktT.github.io/contactApp/static/css/main.1cff9e9b.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7e34fda2.js",
+    "static/css/2.510409cd.chunk.css",
+    "static/js/2.18fb742f.chunk.js",
+    "static/css/main.1cff9e9b.chunk.css",
+    "static/js/main.bbb9d3f6.chunk.js"
+  ]
+}
